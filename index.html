@@ -7,24 +7,28 @@
 		<title>DMFotografia</title>
 		<link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon" />
 		<script src="https://kit.fontawesome.com/27df9314aa.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="style/main.css" />
 	</head>
 	<body>
 		<header class="header-wrapper">
-			<div class="header__img">
-				<img src="assets/img/dmf-logo-white.png" alt="Logo DMFotografia" />
-			</div>
+			<img src="assets/svg/dmf-logo-white.svg" alt="Logo DMFotografia" class="header__logo-image" />
 			<nav class="header__nav">
-				<button class="header-nav__btn about-me"><i class="fa-solid fa-user"></i> O mnie</button>
-				<button class="header-nav__btn gallery"><i class="fa-solid fa-camera"></i> Galeria</button>
-				<button class="header-nav__btn price-list"><i class="fa-solid fa-money-check-dollar"></i> Cennik</button>
-				<button class="header-nav__btn constact"><i class="fa-solid fa-phone"></i> Kontakt</button>
+				<button class="header-nav__btn btn-first about-me"><i class="fa-solid fa-user"></i> O mnie</button>
+				<button class="header-nav__btn btn-first gallery"><i class="fa-solid fa-camera"></i> Galeria</button>
+				<button class="header-nav__btn btn-first price-list"><i class="fa-solid fa-money-check-dollar"></i> Cennik</button>
+				<button class="header-nav__btn btn-first constact"><i class="fa-solid fa-phone"></i> Kontakt</button>
 			</nav>
 		</header>
 
 		<section class="homepage-wrapper">
 			<div class="homepage__shadow">
-				<h1>Nazywan się <span class="bold">Dominik</span></span></h1>
-				<p>Od kilku lat zakmuję się fotografią, chcesz się czegoś więcej dowiedzieć? Zapraszam do sekcji <span>O mnie</span>!</p>
+				<div class="homepage__info">
+					<h1>Nazywam się <span>Dominik</span>!</h1>
+					<p>Od kilku lat zakmuję się fotografią, chcesz się czegoś więcej dowiedzieć? Zapraszam do sekcji <a href="">O mnie</a>!</p>
+				</div>
 			</div>
 		</section>
 
@@ -34,19 +38,19 @@
 				<div class="about-me__image"></div>
 			</aside>
 			<article class="about-me__article">
-				<h3 class="article__header third-heading">O mnie</h3>	
+				<h3 class="article__header third-heading">O mnie</h3>
 				<p class="article__p">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel faucibus nisi, id finibus sem. Aliquam sit amet odio non est molestie vehicula. Suspendisse
-					pellentesque laoreet tortor at maximus. Proin elementum nec lorem ac egestas. Quisque felis libero, consequat vel vestibulum ut, congue quis dui. In a sodales
-					odio. Morbi et auctor metus. Fusce tristique sem nunc, volutpat tempus metus elementum a. In et est efficitur, lobortis lorem sed, vehicula mi. Nunc quam
-					sapien, sollicitudin nec elementum et, sollicitudin non enim. Cras aliquet efficitur sapien ut tristique. Nulla a est tempor, mattis ante eget, ullamcorper
-					ante. Suspendisse dui purus, pretium et pulvinar ultrices, consequat sed urna.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel faucibus nisi, id finibus sem. Aliquam sit amet odio non est molestie vehicula.
+					Suspendisse pellentesque laoreet tortor at maximus. Proin elementum nec lorem ac egestas. Quisque felis libero, consequat vel vestibulum ut, congue
+					quis dui. In a sodales odio. Morbi et auctor metus. Fusce tristique sem nunc, volutpat tempus metus elementum a. In et est efficitur, lobortis lorem
+					sed, vehicula mi. Nunc quam sapien, sollicitudin nec elementum et, sollicitudin non enim. Cras aliquet efficitur sapien ut tristique. Nulla a est
+					tempor, mattis ante eget, ullamcorper ante. Suspendisse dui purus, pretium et pulvinar ultrices, consequat sed urna.
 				</p>
 				<p class="article__p">
-					Suspendisse potenti. Sed posuere congue consectetur. Quisque vitae turpis fringilla, sodales nibh sed, tempor sem. Integer nunc risus, tincidunt quis varius id,
-					hendrerit ut metus. Duis interdum nisi vel nisl elementum dictum. Vestibulum blandit pulvinar nulla, bibendum fringilla augue pellentesque non. Proin at augue
-					maximus, dapibus urna ut, sagittis mauris. Aenean blandit mauris odio, at congue purus dapibus vel. Interdum et malesuada fames ac ante ipsum primis in
-					faucibus. Praesent ut ante vel elit maximus posuere.
+					Suspendisse potenti. Sed posuere congue consectetur. Quisque vitae turpis fringilla, sodales nibh sed, tempor sem. Integer nunc risus, tincidunt quis
+					varius id, hendrerit ut metus. Duis interdum nisi vel nisl elementum dictum. Vestibulum blandit pulvinar nulla, bibendum fringilla augue pellentesque
+					non. Proin at augue maximus, dapibus urna ut, sagittis mauris. Aenean blandit mauris odio, at congue purus dapibus vel. Interdum et malesuada fames ac
+					ante ipsum primis in faucibus. Praesent ut ante vel elit maximus posuere.
 				</p>
 			</article>
 		</section>
@@ -55,43 +59,43 @@
 			<h2 class="gallery__header second-heading">Galeria</h2>
 			<div class="gallery__image-box">
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 				<div class="gallery__image">
-					<img src="" alt="">
+					<img src="" alt="" />
 					<p>Loerm Ipsum.</p>
 				</div>
 			</div>
@@ -100,9 +104,7 @@
 		<section class="price-wrapper">
 			<h2 class="price__header second-heading">Cennik</h2>
 			<div class="price__div">
-				<ul class="price__list">
-
-				</ul>
+				<ul class="price__list"></ul>
 			</div>
 			<aside class="price__image-box">
 				<div class="price__image"></div>
@@ -121,9 +123,9 @@
 				<form action="" class="contact__form">
 					<legend>Napisz wiadomość</legend>
 					<label for="#name">Twoje imię: </label>
-					<input type="text" id="name" placeholder="Imię">
+					<input type="text" id="name" placeholder="Imię" />
 					<label for="#email">Twój e-mail: </label>
-					<input type="email" id="email" placeholder="E-mail">
+					<input type="email" id="email" placeholder="E-mail" />
 					<label for="#message">Twoja wiadomość: </label>
 					<textarea id="message" cols="30" rows="5" placeholder="Wiadomość"></textarea>
 				</form>
@@ -135,10 +137,10 @@
 				<img src="assets/img/dmf-logo-white.png" alt="Logo DMFotografia" />
 			</div>
 			<div class="footer__nav">
-				<button class="footer-nav__btn about-me"><i class="fa-solid fa-user"></i> O mnie</button>
-				<button class="footer-nav__btn gallery"><i class="fa-solid fa-camera"></i> Galeria</button>
-				<button class="footer-nav__btn price-list"><i class="fa-solid fa-money-check-dollar"></i> Cennik</button>
-				<button class="footer-nav__btn constact"><i class="fa-solid fa-phone"></i> Kontakt</button>
+				<button class="footer-nav__btn btn-first about-me"><i class="fa-solid fa-user"></i> O mnie</button>
+				<button class="footer-nav__btn btn-first gallery"><i class="fa-solid fa-camera"></i> Galeria</button>
+				<button class="footer-nav__btn btn-first price-list"><i class="fa-solid fa-money-check-dollar"></i> Cennik</button>
+				<button class="footer-nav__btn btn-first constact"><i class="fa-solid fa-phone"></i> Kontakt</button>
 			</div>
 			<p class="footer__copy">Dominik Matras &copy; Wszelkie prawa zastrzeżone.</p>
 		</footer>

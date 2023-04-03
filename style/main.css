@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+	--main-color: #009688;
+	--secondary-color: #00e3cc;
+	--darker-main-color: #00776b;
+}
+
+body {
+	background-color: #9a9a9a;
+}
+
+.header-wrapper {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 80px;
+
+	padding: 0 15vw;
+}
+
+.header-nav__btn {
+	margin-right: 10px;
+}
+
+.header-nav__btn:last-child {
+	margin-right: 0;
+}
+
+.header-nav__btn i {
+	margin-right: 5px;
+	font-size: 1.4rem;
+}
+
+.btn-first {
+	color: white;
+	padding: 10px 20px;
+	background-color: var(--main-color);
+	border-radius: 8px;
+	border: none;
+	font-size: 1.4rem;
+	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.btn-first:hover {
+	background-color: var(--darker-main-color);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header__logo-image {
+	width: 80px;
+	color: pink;
+}
+
+.homepage-wrapper {
+	height: 100vh;
+	background-image: url(./../assets/photo/photo-i30n.jpeg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: end;
+}
+
+.homepage__shadow {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+}
+
+.homepage__info {
+	margin: 65vh 0 0 5vw;
+	color: #fff;
+	z-index: 1;
+}
+
+.homepage__info h1 {
+	font-size: 5.5rem;
+}
+
+.homepage__info span {
+	font-size: 5.5rem;
+	z-index: 1;
+	background-color: var(--main-color);
+}
+
+.homepage__info p {
+	font-size: 2rem;
+}
+
+.homepage__info a {
+	font-size: 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--main-color);
+}
+
+.homepage__info a:hover {
+	background-color: var(--darker-main-color);
+}
+
+.homepage__info a:visited {
+	background-color: var(--secondary-color);
+}
