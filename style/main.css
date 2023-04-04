@@ -13,7 +13,17 @@
 }
 
 body {
-	background-color: #9a9a9a;
+	background-color: #292929;
+}
+
+.second-heading {
+	text-align: center;
+	font-size: 5rem;
+	color: #fff;
+}
+
+.third-heading {
+	font-size: 3rem;
 }
 
 .header-wrapper {
@@ -58,7 +68,6 @@ body {
 
 .header__logo-image {
 	width: 80px;
-	color: pink;
 }
 
 .homepage-wrapper {
@@ -71,13 +80,17 @@ body {
 }
 
 .homepage__shadow {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.7);
 	width: 100%;
 	height: 100%;
 }
 
 .homepage__info {
-	margin: 65vh 0 0 5vw;
+	width: 80%;
+	margin: 0 auto;
+	position: absolute;
+	left: 10%;
+	bottom: 15%;
 	color: #fff;
 	z-index: 1;
 }
@@ -93,11 +106,12 @@ body {
 }
 
 .homepage__info p {
-	font-size: 2rem;
+	margin-top: 1%;
+	font-size: 2.5rem;
 }
 
 .homepage__info a {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	text-decoration: none;
 	color: #fff;
 	background-color: var(--main-color);
@@ -109,4 +123,40 @@ body {
 
 .homepage__info a:visited {
 	background-color: var(--secondary-color);
+}
+
+.about-me-wrapper {
+	height: 100vh;
+	color: #fff;
+}
+
+.about-me-wrapper h2 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.about-me__flex {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.about-me__image {
+	height: 600px;
+	width: 480px;
+	margin-top: 50px;
+	border: 25px solid var(--main-color);
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+}
+
+.about-me__article {
+	width: 60%;
+}
+
+.article__p {
+	font-size: 1.8rem;
+	margin-top: 1%;
 }
