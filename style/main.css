@@ -10,45 +10,11 @@
   --main-color: #009688;
   --secondary-color: #00e3cc;
   --darker-main-color: #00776b;
+  --bg-color: #292929;
 }
 
 body {
-  background-color: #292929;
-}
-
-.second-heading {
-  text-align: center;
-  font-size: 5rem;
-  color: #fff;
-  margin-top: 30px;
-}
-
-.third-heading {
-  font-size: 3rem;
-}
-
-.header-wrapper {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  height: 80px;
-
-  padding: 0 15vw;
-}
-
-.header-nav__btn {
-  margin-right: 10px;
-}
-
-.header-nav__btn:last-child {
-  margin-right: 0;
-}
-
-.header-nav__btn i {
-  margin-right: 5px;
-  font-size: 1.4rem;
+  background-color: var(--bg-color);
 }
 
 .btn-first {
@@ -65,6 +31,73 @@ body {
 .btn-first:hover {
   background-color: var(--darker-main-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-second {
+  color: white;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--main-color);
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-second:hover {
+  background-color: var(--darker-main-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.second-heading {
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  padding-top: 110px;
+}
+
+.third-heading {
+  font-size: 3rem;
+}
+
+.link {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--secondary-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.link:hover {
+  background-color: var(--darker-main-color);
+}
+
+.bold {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  padding: 0 15vw;
+}
+
+.header-nav__btn {
+  margin-right: 10px;
+}
+
+.header-nav__btn:last-child {
+  margin-right: 0;
+}
+
+.header-nav__btn i {
+  margin-right: 5px;
+  font-size: 1.4rem;
 }
 
 .header__logo-image {
@@ -113,17 +146,10 @@ body {
 
 .homepage__info a {
   font-size: 2.5rem;
-  text-decoration: none;
-  color: #fff;
-  background-color: var(--main-color);
 }
 
 .homepage__info a:hover {
   background-color: var(--darker-main-color);
-}
-
-.homepage__info a:visited {
-  background-color: var(--secondary-color);
 }
 
 .about-me-wrapper {
@@ -142,8 +168,8 @@ body {
 .about-me__image,
 .price__image,
 .contact__image {
-  height: 500px;
-  width: 410px;
+  height: 600px;
+  width: 500px;
   margin-top: 80px;
   border: 25px solid var(--main-color);
   border-radius: 10px;
@@ -172,6 +198,10 @@ body {
 
 .article__p a i {
   font-size: 2rem;
+}
+
+.gallery__header {
+  margin-bottom: 100px;
 }
 
 .gallery__image-box {
@@ -258,10 +288,110 @@ body {
 }
 
 .price__div {
+  margin-top: 60px;
   width: 60%;
   margin-right: 5vw;
 }
 
-.price__p {
+.price__list li {
+  font-size: 1.5rem;
+  margin: 10px 0 0 50px;
+}
+
+.price__article:last-child {
+  margin-top: 50px;
+}
+
+.price__article a {
+  font-size: 3rem;
+}
+
+.price__cost {
+  margin: 20px 0;
+  font-size: 1.7rem;
+  color: var(--secondary-color);
+}
+
+.contact-wrapper {
+  height: 100vh;
+}
+
+.contact__flex {
+  display: flex;
+  color: #fff;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.contant__div {
+  width: 60%;
+  margin: 110px 0 0 6vw;
+}
+
+.contant__div p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.contant__div p i {
+  font-size: 1.5rem;
+}
+
+.contact__form {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.contact__form legend {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact__form label {
+  font-size: 1.5rem;
+}
+
+.contact__form input {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.contact__form textarea {
+  margin-top: 10px;
+  max-height: 250px;
+  max-width: 100%;
+  font-size: 1.4rem;
+}
+
+.contact__submit {
+  margin: 20px auto 0 auto;
+  width: 60%;
+}
+
+.footer-wrapper {
+  height: 20vh;
+  background-color: #1f1f1f;
+}
+
+.footer__logo img {
+  width: 60px;
+}
+
+.footer__nav {
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+
+.footer-wrapper p {
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
   font-size: 1.5rem;
 }
