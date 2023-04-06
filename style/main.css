@@ -361,6 +361,8 @@ body {
 
 .contact__form textarea {
   margin-top: 10px;
+  min-height: 100px;
+  min-width: 300px;
   max-height: 250px;
   max-width: 100%;
   font-size: 1.4rem;
