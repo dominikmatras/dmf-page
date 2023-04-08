@@ -30,6 +30,9 @@
         class="header__logo-image"
       />
       <nav class="header__nav">
+        <button class="header-nav__btn btn-first nav__close">
+          <i class="fa-solid fa-xmark"></i> Zamknij
+        </button>
         <button class="header-nav__btn btn-first about-me">
           <i class="fa-solid fa-user"></i> O mnie
         </button>
@@ -39,10 +42,18 @@
         <button class="header-nav__btn btn-first price-list">
           <i class="fa-solid fa-money-check-dollar"></i> Cennik
         </button>
-        <button class="header-nav__btn btn-first constact">
+        <button class="header-nav__btn btn-first contact">
           <i class="fa-solid fa-phone"></i> Kontakt
         </button>
       </nav>
+
+      <div class="header__burger-wrapper">
+        <div class="header__burger-div">
+          <button class="burger-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
     </header>
 
     <section class="homepage-wrapper">
@@ -52,7 +63,8 @@
           <p>
             Od kilku lat zakmuję się fotografią, chcesz się czegoś więcej
             dowiedzieć? <br />
-            Zapraszam do sekcji <a class="link" href="">O mnie</a>!
+            Zapraszam do sekcji
+            <a class="link" onclick="toAboutMeScroll()">O mnie</a>!
           </p>
         </div>
       </div>
@@ -71,20 +83,20 @@
         <article class="about-me__article">
           <h3 class="article__header third-heading">Nazwyam się Dominik!</h3>
           <p class="article__p">
-            &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            vel faucibus nisi, id finibus sem. Aliquam sit amet odio non est
-            molestie vehicula. Suspendisse pellentesque laoreet tortor at
-            maximus. Proin elementum nec lorem ac egestas. Quisque felis libero,
-            consequat vel vestibulum ut, congue quis dui. In a sodales odio.
-            Morbi et auctor metus.
+            &emsp; Moja praca opiera się na precyzji, pasji i kreatywności.
+            Staram się uchwycić wyjątkowe momenty i stworzyć fotografie, które
+            przyciągają wzrok i poruszają emocje. Zdjęcia, które tworzę, są
+            wyjątkowe i niepowtarzalne, ponieważ każdy z moich klientów ma swoją
+            własną historię i osobowość, którą staram się uchwycić w każdym
+            ujęciu.
           </p>
           <p class="article__p">
-            &emsp; Fusce tristique sem nunc, volutpat tempus metus elementum a.
-            In et est efficitur, lobortis lorem sed, vehicula mi. Nunc quam
-            sapien, sollicitudin nec elementum et, sollicitudin non enim. Cras
-            aliquet efficitur sapien ut tristique. Nulla a est tempor, mattis
-            ante eget, ullamcorper ante. Suspendisse dui purus, pretium et
-            pulvinar ultrices, consequat sed urna.
+            &emsp; Jako fotograf oferuję indywidualne podejście do każdego
+            klienta, aby stworzyć dla nich zdjęcia, które będą odzwierciedlać
+            ich osobowość i historię. Cieszę się, że mogę być częścią tak
+            ważnych momentów w życiu moich klientów i uwiecznić je w piękny
+            sposób. Jeśli szukasz fotografa, który uchwyci piękno Twojego życia,
+            to jestem tutaj, aby Ci pomóc!
           </p>
           <p class="article__p">
             <a
@@ -102,43 +114,43 @@
       <div class="gallery__image-box">
         <div class="gallery__image">
           <div class="img__photo photo1"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Grześ.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo2"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Wiktoria.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo3"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Patrycja.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo4"></div>
-          <p>Loerm Ipsum.</p>
+          <p>BMW E30.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo5"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Andżelika.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo6"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Kacper.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo7"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Mercedes-Benz AMG A35.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo8"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Mercedes-AMG GT.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo9"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Hubert.</p>
         </div>
         <div class="gallery__image">
           <div class="img__photo photo10"></div>
-          <p>Loerm Ipsum.</p>
+          <p>Hyundai i30n performance.</p>
         </div>
       </div>
     </section>
@@ -187,14 +199,14 @@
           <article class="price__article">
             <h3 class="price__heading third-heading">
               Jeżeli masz jakieś pytania zapraszam do sekcji
-              <a class="link" href="">Kontakt</a>
+              <a class="link" onclick="toContactScroll()">Kontakt</a>
             </h3>
           </article>
         </div>
         <aside class="price__image-box">
           <img
-            src="/assets/photo/photo-about-me.png"
-            alt=""
+            src="/assets/photo/photo-price-list.jpg"
+            alt="Zdjęcie przedstawiające autora strony"
             class="price__image"
           />
         </aside>
@@ -206,12 +218,12 @@
       <div class="contact__flex">
         <aside class="contact__image-box">
           <img
-            src="/assets/photo/photo-about-me.png"
-            alt=""
+            src="/assets/photo/photo-contact.jpg"
+            alt="Zdjęcie przedstawiające chłopaka w zielonym dymie"
             class="contact__image"
           />
         </aside>
-        <div class="contant__div">
+        <div class="contact__div">
           <h3 class="third-heading">Zadzwoń lub wyślij wiadomość</h3>
           <p>
             <i class="fa-solid fa-phone"></i> <span class="bold">Telefon</span>:
@@ -223,11 +235,11 @@
           </p>
           <form action="" class="contact__form">
             <legend>Napisz wiadomość</legend>
-            <label for="#name">Twoje imię: </label>
-            <input type="text" id="name" placeholder="Imię" />
-            <label for="#email">Twój e-mail: </label>
+            <label for="firstName">Twoje imię: </label>
+            <input type="text" id="firstName" placeholder="Imię" />
+            <label for="email">Twój e-mail: </label>
             <input type="email" id="email" placeholder="E-mail" />
-            <label for="#message">Twoja wiadomość: </label>
+            <label for="message">Twoja wiadomość: </label>
             <textarea
               id="message"
               cols="30"
@@ -243,21 +255,7 @@
     <footer class="footer-wrapper">
       <div class="footer__nav">
         <div class="footer__logo">
-          <img src="assets/img/dmf-logo-white.png" alt="Logo DMFotografia" />
-        </div>
-        <div class="footer__btns">
-          <button class="footer-nav__btn btn-second about-me">
-            <i class="fa-solid fa-user"></i> O mnie
-          </button>
-          <button class="footer-nav__btn btn-second gallery">
-            <i class="fa-solid fa-camera"></i> Galeria
-          </button>
-          <button class="footer-nav__btn btn-second price-list">
-            <i class="fa-solid fa-money-check-dollar"></i> Cennik
-          </button>
-          <button class="footer-nav__btn btn-second constact">
-            <i class="fa-solid fa-phone"></i> Kontakt
-          </button>
+          <img src="assets/svg/dmf-logo-white.svg" alt="Logo DMFotografia" />
         </div>
       </div>
       <p class="footer__copy">
