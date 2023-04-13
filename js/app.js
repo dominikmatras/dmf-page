@@ -10,7 +10,6 @@ const firstName = document.querySelector('#firstName')
 const email = document.querySelector('#email')
 const message = document.querySelector('#message')
 
-let errorMsg = ''
 let errors = 0
 
 const toAboutMeScroll = () => {
@@ -52,7 +51,6 @@ const closeNav = () => {
 const checkInput = input => {
   if (input.value !== '') {
   } else {
-    errorMsg = 'Nie wpisano żadnej wartości'
     errors += 1
   }
 }
@@ -63,7 +61,6 @@ const emailValidation = email => {
 
   if (regEx.test(email.value)) {
   } else {
-    errorMsg = 'E-mail jest niepoprawny'
     errors += 1
   }
 }
